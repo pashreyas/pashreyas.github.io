@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
@@ -142,8 +142,8 @@ const StyledPost = styled.li`
   }
 `;
 
-const PensievePage = ({ location, data }) => {
-  const posts = data.allMarkdownRemark.edges;
+const PensievePage = ({ location }) => {
+  const posts = []; //data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location}>
@@ -152,11 +152,6 @@ const PensievePage = ({ location, data }) => {
       <StyledMainContainer>
         <header>
           <h1 className="big-heading">Pensieve</h1>
-          <p className="subtitle">
-            <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
-              a collection of memories
-            </a>
-          </p>
         </header>
 
         <StyledGrid>
