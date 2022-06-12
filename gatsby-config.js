@@ -5,8 +5,8 @@ module.exports = {
     title: 'Shreyas Annagiri',
     description:
       'Shreyas Annagiri is a curious and passionate student who is most interested in the biochemical sciences and medicine.',
-    siteUrl: 'https://shreyasannagiri.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://pashreyas.github.io', // No trailing slash allowed!
+    image: '/logo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@shreyasannagiri',
   },
   plugins: [
